@@ -115,8 +115,6 @@ driver.implicitly_wait(30)
 driver.get(siteUrl)
 siteLogin(driver, siteUser, sitePass)
 # getTitle()
-# titleOnePath for Microsoft Visual Basic 2015 RELOADED
-# titleNinePath for Expert Delphi
 selectedTitle = driver.find_element_by_xpath(titleNinePath)
 selectedTitle.click()
 # once the title is clicked and starts to load, the browser doesn't auto-
