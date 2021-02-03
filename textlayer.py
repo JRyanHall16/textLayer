@@ -144,7 +144,7 @@ selectedTile.click()
 # matically change focus to the new tab so we do it ourselves
 driver.switch_to.window(driver.window_handles[1])
 tileTitle = driver.find_element_by_xpath(tileTitlePath).get_attribute('textContent')
-re.sub(r'[^\w]', '', tileTitle)
+tileTitle = re.sub(r'[^\w]', '', tileTitle)
 # then we check to see if we are on the (presumably 'Cover' page and if not
 # click the first element in the nav (this needs to be re-evaluated)
 if driver.find_element_by_xpath(pageTitlePath).get_attribute('value') != 'Cover':
